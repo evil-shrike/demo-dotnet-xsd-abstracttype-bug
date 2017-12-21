@@ -3,8 +3,6 @@
 	xmlns="xmlschema-test" 
 	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
 	targetNamespace="xmlschema-test"
-	elementFormDefault="qualified" 
-	attributeFormDefault="qualified"
 	>
 
 	<xs:include schemaLocation="base.xsd">
@@ -12,6 +10,9 @@
 
 	<xs:complexType name="abstract-data-source">
 		<xs:complexContent>
+			<!-- the same:
+			<xs:extension base="x:abstract-component" xmlns:x="xmlschema-test">
+			-->
 			<xs:extension base="abstract-component">
 				<xs:attribute name="n" use="optional" form="qualified" />
 			</xs:extension>
