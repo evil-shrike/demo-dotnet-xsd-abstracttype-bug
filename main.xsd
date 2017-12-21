@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema 
+	xmlns="xmlschema-test" 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="xmlschema-test"
+	elementFormDefault="qualified" 
+	attributeFormDefault="qualified"
+	>
+
+	<xs:include schemaLocation="base.xsd">
+	</xs:include>
+
+	<xs:complexType name="abstract-data-source">
+		<xs:complexContent>
+			<xs:extension base="abstract-component">
+				<xs:attribute name="n" use="optional" form="qualified" />
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+</xs:schema>

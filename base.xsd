@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema
+	targetNamespace="xmlschema-test"
+	attributeFormDefault="qualified"
+    elementFormDefault="qualified"
+	xmlns="xmlschema-test"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+
+	<xs:complexType name="abstract-component" abstract="true">
+		<xs:attribute name="clr-type" type="xs:string" use="optional" form="qualified" />
+	</xs:complexType>
+
+</xs:schema>
